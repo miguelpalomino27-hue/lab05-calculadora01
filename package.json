@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+    
+    
   },
   "keywords": [],
   "author": "",
@@ -198,5 +201,17 @@
     "yargs": "^17.7.3",
     "yargs-parser": "^21.1.1",
     "yocto-queue": "^0.1.0"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageDirectory": "coverage",
+    "coverageThreshold": {
+      "global": {
+        "branches": 70,
+        "functions": 70,
+        "lines": 70,
+        "statements": 70
+      }
+    }
   }
 }
