@@ -3,7 +3,7 @@ const {
   esEmailValido,
   contarPalabras,
   aMayusculas
-} = require('../ValidadorString/validador');
+} = require('./validador');
 
 describe('Validador de Textos', () => {
     describe('saludar()', () => {
